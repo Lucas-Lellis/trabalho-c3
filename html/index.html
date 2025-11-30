@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação de Cores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Adivinhe a Cor!</h1>
+        <p class="instructions">
+            Tente adivinhar a cor secreta. Digite o nome de uma cor HTML (ex: red, blue, green). Você tem <span id="tentativas-restantes">3</span> tentativas.
+        </p>
+
+        <div class="game-area">
+            <input type="text" id="input-cor" placeholder="Digite o nome da cor" maxlength="20">
+            <button id="btn-adivinhar">Adivinhar</button>
+        </div>
+        
+        <p id="feedback-mensagem" class="feedback-info">Comece a jogar!</p>
+
+        <button id="btn-reset" class="hidden">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
